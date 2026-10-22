@@ -245,9 +245,19 @@ body {
   transform: rotate(180deg) scale(1.08);
 }
 
-.pokeball-svg {
+.pokeball-svg,
+.brand-pokeball-img {
   width: 100%;
   height: 100%;
+  display: block;
+}
+
+.side-brand-pokeball-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .ball-core {
@@ -2274,9 +2284,12 @@ body:not(.drawer-is-collapsed) .side-dock-reopen-btn {
   animation: floatBounce 4s ease-in-out infinite;
 }
 
-.portal-pokeball-svg {
+.portal-pokeball-svg,
+.portal-pokeball-img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 @keyframes floatBounce {
